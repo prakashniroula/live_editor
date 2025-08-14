@@ -47,9 +47,7 @@ Jump straight into coding from the homepage — no signup or project creation re
 
 
 ## Github
-
-*(Add your GitHub repository link here)*
-
+https://github.com/prakashniroula/live_editor
 
 
 ## Pricing
