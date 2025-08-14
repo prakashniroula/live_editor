@@ -1,0 +1,83 @@
+.sidebar {
+  width: 80px;
+  height: 100%;
+  padding: var(--mantine-spacing-md);
+  flex-direction: column;
+  border-right: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.sidebar.extended {
+  width: 200px;
+}
+
+.sidebarMain {
+  flex: 1;
+  margin-top: 2rem;
+  height: 100%;
+}
+
+.link {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--mantine-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-5));
+  }
+
+  &[data-active] {
+    &,
+    &:hover {
+      background-color: var(--mantine-color-blue-light);
+      color: var(--mantine-color-blue-light-color);
+    }
+  }
+}
+
+.extended .sidebarMain {
+  margin-top: 0rem;
+  height: 100%;
+}
+
+.extended .link {
+  width: 40px;
+  height: 40px;
+}
+
+.extended .mainLink {
+  width: 100%;
+  display: flex;
+  padding: 0.2rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: var(--mantine-radius-md);
+
+  &:hover {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-5));
+  }
+}
+
+.extended .link {
+  &[data-active] {
+    background-color: initial;
+  }
+}
+
+.extended .mainLinkActive {
+  background-color: var(--mantine-color-blue-light);
+  color: var(--mantine-color-blue-light-color)
+}
+
+.mobileDrawer {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+}

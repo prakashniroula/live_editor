@@ -1,0 +1,6 @@
+.borderRight {
+  border-right: 1px solid var(--color-slate-200);
+  @mixin dark {
+    border-right: 1px solid var(--color-slate-700);
+  }
+}

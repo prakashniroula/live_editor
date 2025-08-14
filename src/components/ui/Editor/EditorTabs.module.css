@@ -1,0 +1,16 @@
+
+.iconClose {
+  border-radius: 50%;
+  padding: 0.5px;
+}
+
+.iconClose:hover {
+  @mixin dark {
+    background-color: var(--color-slate-300);
+    color: var(--color-black)
+  }
+  @mixin light {
+    background-color: var(--color-slate-800);
+    color: var(--color-white);
+  }
+}
