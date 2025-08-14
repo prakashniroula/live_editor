@@ -5,6 +5,7 @@ import classes from './HeroText.module.css';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Routes } from '@/routes/routes';
+import { redirect } from 'next/navigation';
 
 export function HeroText() {
 
@@ -103,11 +104,9 @@ export function HeroText() {
           <Button className={classes.control} size="lg" variant="default" color="gray">
             Features
           </Button>
-          <Link href={Routes.projects} className='ml-8'>
-            <Button variant='gradient' className={classes.control} size="lg">
-              Start building
-            </Button>
-          </Link>
+          <Button onClick={() => redirect(Routes.projects)} variant='gradient' className={classes.control} size="lg">
+            Start building
+          </Button>
         </div>
       </div>
     </Container>

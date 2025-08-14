@@ -16,6 +16,10 @@ type Props = { children: React.ReactNode }
 
 function LayoutHelper({curRoute, children}: {curRoute: string, children: React.ReactNode}) {
   const sidebarDisclosure = useDisclosure(false);
+  if ( Routes.app === curRoute ) return <>
+    <LightDarkMode forceDisplay/>
+    {children}
+  </>
   return <Box className={`w-screen h-screen flex max-md:flex-col`}>
     <Sidebar className='max-md:hidden' />
     <div className={`md:hidden flex w-full justify-between relative py-2 ${curRoute === Routes.editor ? `${style.mobileNavBg} px-2` : 'px-8'}`}>
@@ -27,7 +31,7 @@ function LayoutHelper({curRoute, children}: {curRoute: string, children: React.R
       </div>
       <LightDarkMode mobile />
     </div>
-    <SidebarMobile sidebarDisclosure={sidebarDisclosure} />
+    {curRoute !== Routes.app && <SidebarMobile sidebarDisclosure={sidebarDisclosure} />}
     {children}
   </Box >
 }

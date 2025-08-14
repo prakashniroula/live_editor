@@ -4,6 +4,7 @@ import { HeaderMenu } from '@/components/landing/HeaderMenu';
 import { HeroText } from '@/components/landing/HeroText';
 import { Box, Title } from '@mantine/core';
 import EditorModule from './editor/EditorModule';
+import '@/components/landing/globals.css'
 
 export default function App() {
 
