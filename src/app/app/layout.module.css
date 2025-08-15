@@ -1,5 +1,0 @@
-.mobileNavBg {
-  @mixin dark {
-    background-color: #282C34;
-  }
-}

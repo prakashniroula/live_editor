@@ -22,7 +22,7 @@ function LayoutHelper({curRoute, children}: {curRoute: string, children: React.R
   </>)
   return <Box className={`w-screen h-screen flex max-md:flex-col`}>
     <Sidebar className='max-md:hidden' />
-    <div className={`md:hidden flex w-full justify-between relative py-2 ${curRoute === Routes.editor ? `${style.mobileNavBg} px-2` : 'px-8'}`}>
+    <div className={`md:hidden flex w-full justify-between relative py-2 ${curRoute === Routes.editor ? `px-2` : 'px-8'}`}>
       <div className="flex gap-4">
         <ActionIcon size='lg' variant='default' bg='none' onClick={sidebarDisclosure[1].open}>
           <IconMenu2 size={16} />
