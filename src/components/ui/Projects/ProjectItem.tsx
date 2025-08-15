@@ -53,7 +53,10 @@ const ProjectItem = ({ onClick, onDelete, shareToken, hostToken, imageUrl, image
         ),
         labels: { confirm: `Delete for ${selfDeleteOnly ? 'me' : 'everyone'}`, cancel: "Cancel" },
         confirmProps: { color: 'red', loading: deleteLoad },
-        onConfirm: () => onDeleteConfirm(selfDeleteOnly),
+        onConfirm: () => {
+          modals.closeAll();
+          onDeleteConfirm(selfDeleteOnly)
+        },
         onCancel: modals.closeAll
       })
     }
