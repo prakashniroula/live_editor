@@ -28,6 +28,8 @@ Write, preview, and share code in real time — from desktop or mobile. With a v
 
 ## Try it Live
 
+https://live-editor-xi.vercel.app/
+
 Jump straight into coding from the homepage — no signup or project creation required!  
 
 1. Experiment in a temporary shared environment.  

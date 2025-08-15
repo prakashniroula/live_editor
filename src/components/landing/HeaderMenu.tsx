@@ -11,7 +11,7 @@ const links = [
     link: 'https://github.com/prakashniroula/live_editor',
     label: 'Github'
   },
-  { link: '#about', label: 'About' },
+  { link: 'https://github.com/prakashniroula/live_editor/?tab=readme-ov-file#codelive', label: 'About' },
   { link: '#pricing', label: 'Free' },
 ];
 
@@ -24,7 +24,6 @@ export function HeaderMenu() {
         key={link.label}
         href={link.link}
         className={classes.link}
-        onClick={(event) => event.preventDefault()}
       >
         {link.label}
       </a>
